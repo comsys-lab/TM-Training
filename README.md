@@ -10,4 +10,4 @@ Write code flow in README file of the subfolder.
 Runtime overhead in horzontally tiered memory system.
 Runtime overhead in vertically tiered memory system.
 Read output files of SCALE-sim.
-Create one csv file with final result values.
+Create one csv file with final result values.# DNN-Accelerator-System-for-Heterogeneous-Memory
