@@ -2,7 +2,7 @@
 
 Read topology, configuration file.
 Add flags (-t topology.csv, -c config.cfg).
-Write all code flow of source files in the subfolder.
+Write code flow in README file of the subfolder.
 
 
 2. To do

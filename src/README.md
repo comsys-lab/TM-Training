@@ -56,13 +56,41 @@
     : (total number of accesses) x (ReadEnergy) + (number of OFMAP data) x (WriteEnergy)
 
 
-7. single_layer_ver.c
+7. buffer_miss_timing.c
+    : Calculate the time required for active buffer miss.
+    Use Concatenated operand matirx.
+    Dimension of concatenated operand matrix: (rxc)
+    Dimension of read portion of the matrix when prefetching is done: (rxc') 
+    active buffer miss time (Tb)= c' + r
 
 
+8. single_layer_ver.c
+    (1) Tier 1 as a buffer.
+        Calculate the number of prefetches from tier1 to on-chip buffer until a miss occurs in tier 1 (N).
+        Calculate the time required for prefetching from tier2 to inactive area of tier1 (T21).
+        Time taken until miss occurs in tier 1 = Tb x N
+        Check if prefetching from tier 2 to tier 1 is complete until miss occurs in tier 1. If not completed, calculate overhead.
+
+
+    (2) Tier 1 as a cache.
+        Use AMAT to calculate runtime overehead.
+        Use single_layer_data_access_analysis.c
+        If a miss occurs in tier1, read the data from tier 2 in units of page size (4KB).
+        If each input data in a specific layer is accessed 1.x times on average, 
+        we can simplify and calculate how many times memory requests can access the 4KB data.
 
 
 8. single_layer_hor.c
+    (1) Ideal address translation
 
+
+    (2) Naive address translation
+
+
+    (3) Ideal data placmenet
+
+
+    (4) Naive data placement
 
 
 
