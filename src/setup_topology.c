@@ -67,7 +67,7 @@ void main() {
 
     fclose(file);
 
-    /* For test
+    /*
     for (int i = 0; i < line_count; i++) {
         printf("Layer: %s\n", topology[i].layer);
         printf("IFMAP Height: %d\n", topology[i].ifmap_row);

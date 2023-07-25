@@ -66,7 +66,7 @@ void main() {
 
     fclose(file);
 
-    /* For test
+    /*
     printf("Run Name: %s\n", config.run_name);
     printf("Systolic Size: %dx%d\n", config.systolic_row, config.systolic_col);
     printf("IFMAP Buffer (KB): %d\n", config.ifmap_buffer);
