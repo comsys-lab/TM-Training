@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "setup_config.h"
-#include "setup_topology.h"
+#include "/home/jy/hm_dnn/src/Data/setup_config.h"
+#include "/home/jy/hm_dnn/src/Data/setup_topology.h"
 
 int main(int argc, char *argv[]) {
     char *topo_path = NULL;
@@ -29,10 +29,10 @@ int main(int argc, char *argv[]) {
     }
 
     // Concatenate file paths with the appropriate directory
-    char topo_file[200] = "/home/jy/hm_overhead/input_files/topology_files/";
+    char topo_file[200] = "/home/jy/hm_dnn/input_files/topology_files/";
     strcat(topo_file, topo_path);
 
-    char config_file[200] = "/home/jy/hm_overhead/input_files/config_files/";
+    char config_file[200] = "/home/jy/hm_dnn/input_files/config_files/";
     strcat(config_file, config_path);
 
     /*
