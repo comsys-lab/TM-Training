@@ -82,10 +82,10 @@
 
 8. single_layer_hor.c
     (1) Ideal address translation
-
+        Set TLB size = 999999999999
 
     (2) Naive address translation
-
+        Use TLB size in the config file.
 
     (3) Ideal data placmenet
 
